@@ -33,7 +33,7 @@ function Projects() {
             </Link>
           </div>
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <Link to="https://example.com/project3">
+            <Link target='blank' to="https://portfolio-ganesh212001.vercel.app/">
               <img className="w-full h-48 object-cover" src={portfolio} alt="Project 3" />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800">Portfolio</h3>
