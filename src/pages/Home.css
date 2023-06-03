@@ -1,0 +1,18 @@
+.back{
+    background: url(../bg/gif_02.gif);
+    height: 90vh;
+}
+@media (max-width:500px) {
+.back {
+    padding-top: 60px;
+    background: url('../bg/gif_01.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    }
+    .backt {
+        margin-bottom: 60px;
+    }
+}
