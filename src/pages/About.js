@@ -1,6 +1,13 @@
 import React from "react";
 import profilePic from "../images/profile.jpg";
-// import Footer from "../components/Footer";
+import html from '../logo/frontend/html.png'
+import css from '../logo/frontend/css3.png'
+import javascript from '../logo/frontend/javascript.png'
+import react from '../logo/frontend/react.png'
+import node from '../logo/backend/node.png'
+import express from '../logo/backend/express.png'
+import python from '../logo/backend/python.png'
+import mongo from '../logo/database/mongodb.png'
 
 const About1 = () => {
   return (
@@ -123,22 +130,33 @@ const About1 = () => {
             <h4 className="text-lg font-medium text-gray-900">
               Front-end Development
             </h4>
-            <ul className="mt-4 text-gray-500">
+            <div className="container flex mt-4">
+            <img className="flex-row w-12 h-12 mx-auto my-4" src={html} alt="Project 3" />
+            <img className="flex-row w-8 h-min mx-auto my-4 ml-8" src={css} alt="Project 3" />
+            <img className="flex-row w-20 h-12 mx-auto my-4" src={javascript} alt="Project 3" />
+            <img className="flex-row w-10 h-auto mx-auto my-4" src={react} alt="Project 3" />
+            </div>
+            {/* <ul className="mt-4 text-gray-500">
               <li className="mt-2">
                 HTML5, CSS3, JavaScript, React, Tailwind CSS
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
 
         <div className="bg-white overflow-hidden shadow rounded-lg">
-          <div className="px-4 py-5 sm:p-6">
+          <div className="px-4 py-2 sm:p-6">
             <h4 className="text-lg font-medium text-gray-900">
               Back-end Development
             </h4>
-            <ul className="mt-4 text-gray-500">
+            <div className="container flex mt-4">
+            <img className="flex-row w-20 h-14 mx-auto my-4" src={node} alt="Project 3" />
+            <img className="flex-row w-28 h-20 mx-auto my-4 -mt-0 mr-3" src={express} alt="Project 3" />
+            <img className="flex-row w-20 h-16 mx-auto my-4 space-y-1" src={python} alt="Project 3" />
+            </div>
+            {/* <ul className="mt-4 text-gray-500">
               <li className="mt-2">Node.js, Express.js, Python</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
 
@@ -147,9 +165,12 @@ const About1 = () => {
             <h4 className="text-lg font-medium text-gray-900">
               Databases
             </h4>
-            <ul className="mt-4 text-gray-500">
+            <div className="container flex mt-4">
+            <img className="flex-row w-14 h-14 mx-auto my-4" src={mongo} alt="Project 3" />
+            </div>
+            {/* <ul className="mt-4 text-gray-500">
               <li className="mt-2">MongoDB</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
