@@ -1,5 +1,5 @@
 import React from 'react'
-import About from '../pages/About'
+// import About from '../pages/About1'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from '../components/Footer'
@@ -8,6 +8,7 @@ import resume from '../images/Resume.pdf'
 // import BackgroundVideo from '../components/Background';
 import './Home.css'
 import { Link } from 'react-router-dom'
+import About from '../pages/About'
 
 const Home = () => {
   return (

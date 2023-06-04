@@ -1,5 +1,13 @@
 import React from "react";
-import profilePic from "../images/profile.jpg";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import "./About.css";
+import "../components/atoms/PrimaryBtn/PrimaryBtn.css";
+import "../shared/Shared.css";
+import BottomLine from "../components/atoms/BottomLine/index";
+import { FaDownload } from "react-icons/fa";
+import {Link} from "react-router-dom";
+import resume from '../images/Resume.pdf'
 import html from '../logo/frontend/html.png'
 import css from '../logo/frontend/css3.png'
 import javascript from '../logo/frontend/javascript.png'
@@ -9,119 +17,118 @@ import express from '../logo/backend/express.png'
 import python from '../logo/backend/python.png'
 import mongo from '../logo/database/mongodb.png'
 
+
 const About1 = () => {
   return (
-    <>
-    <div className="bg-gray-100 py-14">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          {/* <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-            About Me
-          </h2> */}
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            A little bit About Myself
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            I'm a web developer with a passion for creating beautiful, responsive
-            websites and web applications. With several month's of experience
-            under my belt, I have developed a strong understanding of HTML,
-            CSS, JavaScript, and various web development frameworks.
-          </p>
-        </div>
-
-        <div className="mt-10">
-          <div className="md:grid md:grid-cols-2 md:gap-6">
-            <div>
-              <h3 className="text-lg font-medium leading-6 text-gray-900 mt-20">
-                Personal Information
-              </h3>
-              <div className="mt-16">
-                <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Name
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Ganesh Mahajan
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Date Of Birth
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      21/06/2001
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Phone
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      (+91) 9724158961
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      github
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                    https://github.com/Ganesh212001
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Location
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Surat,Gujarat(India)
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Freelance
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Available
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Linkedin
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Ganesh Mahajan
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Email
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      ganeshmahajan21062001@gmail.com
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-
-            <div className="mt-10 md:mt-0">
-              <h3 className="text-lg font-medium leading-6 text-gray-900">
-                Profile Picture
-              </h3>
-          <div className="mt-5">
+    <div className="parent pt-16 my-16">
+      <div className="">
+        <motion.div
+          className="mb-10"
+          initial={{ y: -200, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1, type: "spring" },
+          }}
+        >
+          <h1 className="text-4xl font-semibold drop-shadow-md text-center">
+            About <span className="text-primary">Me</span>
+          </h1>
+          <BottomLine />
+        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              transition: { duration: 1, delay: 1.25 },
+            }}
+          >
             <img
-              src={profilePic}
-              alt="Profile"
-              className="w-full object-cover rounded-lg shadow-md"
+            //   src=
+              alt="Ganesh Mahajan"
+              className="p-12 w-70 h-70 transform translate-y-[-12%]"
+              title="Ganesh Mahajan"
             />
-          </div>
+
+          </motion.div>
+          <motion.div
+            className=""
+            initial={{ x: 200, opacity: 0 }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              transition: { duration: 1, delay: 1.25 },
+            }}
+          >
+            <h1 className="text-4xl font-semibold mb-4 text-center translate-y-[-380%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left">Ganesh Mahajan</h1>
+            <div className="my-8">
+              <TypeAnimation
+                className="text-2xl text-primary font-bold text-center translate-y-[-500%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-2 md:text-left"
+                cursor={true}
+                sequence={[
+                  "A Mern-stack Developer",
+                  2000,
+                  "A Full-stack Developer",
+                  2000,
+                  "A Front-end Developer",
+                  2000
+                ]}
+                wrapper="div"
+                repeat={Infinity}
+              />
+            </div>
+            <p className="text-neutral font-medium text-center translate-y-[-100%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
+              As a MERN stack developer, I am committed to building high-quality
+              web applications that meet the needs of my clients. With years of
+              experience in full-stack web development, I specialize in using
+              React.js, Next js, Typescript, MongoDB, Express.js, and Node.js to
+              create scalable and robust web applications.
+            </p>
+            <br />
+            <p className="text-neutral font-medium text-center translate-y-[-150%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
+              My passion for solving complex problems and creating innovative
+              solutions drives me to stay up-to-date with the latest
+              technologies and trends in the industry.
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4 mt-4 text-center translate-y-[-50%] sm:translate-y-[-0%] sm:mb-2 md:text-left ">
+              <h2 className="font-medium">
+                <span className="mr-2 text-primary">Name : </span>Ganesh Mahajan
+              </h2>
+              <h2 className="font-medium">
+                <span className="mr-2 text-primary">Phone : </span>+91 9724158961
+              </h2>
+              <h2 className="font-medium">
+                <span className="mr-2 text-primary">Email : </span>
+                ganeshmahajan21062001@gmail.com
+              </h2>
+              <h2 className="font-medium">
+                <span className="mr-2 text-primary">Address : </span>Surat,Gujarat,India
+              </h2>
+              <Link
+                to= {resume}
+                target="blank"
+              >
+                <div className="flex justify-center md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
+                  <button className="primary-button">
+                    <span>My Resume</span>
+                    <span>
+                      <FaDownload />
+                    </span>
+                  </button>
+                </div>
+
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </div>
-    </div>
 
-    <div className="mt-10">
-      <h3 className="text-lg font-medium leading-6 text-gray-900">
+      {/* <MySkill /> */}
+
+      <div className="mt-[6.5rem]">
+      <h3 className="text-4xl font-semibold drop-shadow-md text-center">
         Skills
       </h3>
       <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -175,12 +182,10 @@ const About1 = () => {
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-{/* <Footer/> */}
+      {/* <Education /> */}
+    </div>
+  );
+};
 
-</>
-);
-}
-export default About1
+export default About1;
