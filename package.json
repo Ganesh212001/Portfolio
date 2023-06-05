@@ -18,6 +18,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
     "react-type-animation": "^3.0.1",
     "tailwindcss": "^3.3.2",
     "type.js": "^0.0.1",

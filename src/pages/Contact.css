@@ -1,30 +1,13 @@
-.input-field {
-    display: inline-block;
-    padding: 9px;
-    border-radius: 7px;
-    box-shadow: 0 0 9px 2px #141414;
-    margin: 12px 0;
-    width: 100%;
-    background-color: #212121;
-    color: gray;
-}
-
-.input-field::placeholder {
-    color: gray;
-}
-
-.input-field:focus {
-    outline: none;
-    box-shadow: 0 0 5px 2px #FF651C;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-    transition:
-        background-color 600000s 0s,
-        color 600000s 0s;
-}
-
-input[data-autocompleted] {
-    background-color: transparent !important;
-}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
