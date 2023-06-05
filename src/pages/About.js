@@ -63,9 +63,9 @@ const About1 = () => {
             }}
           >
             <h1 className="text-4xl font-semibold mb-4 text-center translate-y-[-380%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left">Ganesh Mahajan</h1>
-            <div className="my-8">
+            <div className="my-8 css">
               <TypeAnimation
-                className="text-2xl text-primary font-bold text-center translate-y-[-500%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-2 md:text-left"
+                className="css text-2xl text-primary font-bold text-center translate-y-[-500%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-4 md:text-left"
                 cursor={true}
                 sequence={[
                   "A Mern-stack Developer",
@@ -77,8 +77,8 @@ const About1 = () => {
                 ]}
                 wrapper="div"
                 repeat={Infinity}
-              /><br /><br />
-            </div><br />
+              />
+            </div>
             <p className="text-neutral font-medium text-center translate-y-[-100%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
               As a MERN stack developer, I am committed to building high-quality
               web applications that meet the needs of my clients. With years of
@@ -110,7 +110,7 @@ const About1 = () => {
                 to= {resume}
                 target="blank"
               >
-                <div className="flex justify-center md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
+                <div className="flex justify-center mt-8 md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
                   <button className="primary-button">
                     <span>My Resume</span>
                     <span>
