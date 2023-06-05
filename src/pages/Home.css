@@ -1,6 +1,8 @@
 .back{
-    background: url(../bg/gif_02.gif);
-    height: 90vh;
+    background: url(../bg/gif_03.gif);
+    height: 100vh;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Secular One', sans-serif;
 }
 @media (max-width:500px) {
 .back {
@@ -10,9 +12,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    color: white;
     }
-    .backt {
-        margin-bottom: 60px;
-    }
+.back2 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
 }

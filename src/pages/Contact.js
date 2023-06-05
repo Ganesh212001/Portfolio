@@ -1,5 +1,4 @@
 import React from 'react';
-// import Footer from '../components/Footer';
 
 function Contact() {
   return (
@@ -41,3 +40,5 @@ function Contact() {
 }
 
 export default Contact;
+
+

@@ -7,11 +7,11 @@ function TypeJS() {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Frontend Developer' , 'Backend Developer' , 'Tailwind CSS' , 'Git VCS' , 'GitHub'],
+      strings: ['Frontend Developer' , 'Backend Developer' , 'MERN Stack Developer' , 'Tailwind CSS'],
       typeSpeed: 100,
       loop: true,
-      backDelay: 700,
-      startDelay:500
+      backDelay: 1000,
+      startDelay:1000
     });
 
     return () => {
