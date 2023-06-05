@@ -63,7 +63,7 @@ const About1 = () => {
             }}
           >
             <h1 className="text-4xl font-semibold mb-4 text-center translate-y-[-380%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left">Ganesh Mahajan</h1>
-            <div className="my-8">
+            <div className="my-8 mb-2">
               <TypeAnimation
                 className="text-2xl text-primary font-bold text-center translate-y-[-500%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-2 md:text-left"
                 cursor={true}
