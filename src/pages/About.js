@@ -77,7 +77,7 @@ const About1 = () => {
                 ]}
                 wrapper="div"
                 repeat={Infinity}
-              />
+              /><br /><br />
             </div>
             <p className="text-neutral font-medium text-center translate-y-[-100%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
               As a MERN stack developer, I am committed to building high-quality
