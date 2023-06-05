@@ -46,7 +46,7 @@ const About1 = () => {
             }}
           >
             <img
-            //   src=
+              src= "https://res.cloudinary.com/du541igfh/image/upload/v1683035791/Blog%20Portfolio%20Gilbert/Project/berthutapea.com/GilbertHutapea_qjy2gq.png"
               alt="Ganesh Mahajan"
               className="p-12 w-70 h-70 transform translate-y-[-12%]"
               title="Ganesh Mahajan"
