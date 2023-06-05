@@ -79,7 +79,7 @@ const About1 = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className="text-neutral font-medium text-center translate-y-[-100%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
+            <p className="text-neutral font-medium text-center translate-y-[-80%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
               As a MERN stack developer, I am committed to building high-quality
               web applications that meet the needs of my clients. With years of
               experience in full-stack web development, I specialize in using
@@ -87,7 +87,7 @@ const About1 = () => {
               create scalable and robust web applications.
             </p>
             <br />
-            <p className="text-neutral font-medium text-center translate-y-[-150%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
+            <p className="text-neutral font-medium text-center translate-y-[-130%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
               My passion for solving complex problems and creating innovative
               solutions drives me to stay up-to-date with the latest
               technologies and trends in the industry.
