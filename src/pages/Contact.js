@@ -1,44 +1,92 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import BottomLine from "../components/atoms/BottomLine/index";
 
-function Contact() {
+const Contact = () => {
   return (
-    <>
-    <div className="bg-gray-100 h-screen flex gap-16 flex-col justify-center items-center">
-      <h1 className="text-4xl font-bold mb-4 ">Contact Me</h1>
-      <form className="w-full max-w-lg">
-        <div className="flex flex-wrap mb-4">
-          <div className="w-full">
-            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Enter Your Name" />
+    <div className="flex justify-center flex-col items-center h-screen -mt-10">
+       <h1 className="text-4xl font-semibold drop-shadow-md text-center">
+           
+        <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}>Contact <span className="text-primary">Us</span>
+          </motion.div>
+          </h1>
+          <BottomLine />
+        <form className='w-96'>
+          <div className="mb-4 mt-14 space-y-4">
+          <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 5 }}>
+            <input
+              className="w-full px-4 py-2 border rounded-lg"
+              type="text"
+              id="name"
+              name="name"
+              placeholder='Name'
+            />
+            </motion.div>
           </div>
-        </div>
-        <div className="flex flex-wrap mb-4">
-          <div className="w-full">
-            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Enter Your Mobile No." />
+          <div className="mb-4">
+          <motion.div className='direction-reverse'
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 5 }}>
+            <input
+              className="w-full px-4 py-2 border rounded-lg"
+              type="text"
+              id="mobile"
+              name="mobile"
+              placeholder='Mobile No.'
+            />
+            </motion.div>
           </div>
-        </div>
-        <div className="flex flex-wrap mb-4">
-          <div className="w-full">
-            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="Enter Your Email" />
+          <div className="mb-4">
+          <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 5 }}>
+            <input
+              className="w-full px-4 py-2 border rounded-lg"
+              type="email"
+              id="email"
+              name="email"
+              placeholder='Email'
+            />
+            </motion.div>
           </div>
-        </div>
-        <div className="flex flex-wrap mb-4">
-          <div className="w-full">
-            <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" rows="5" placeholder="Enter your message here"></textarea>
-          </div>
-        </div>
-        <div className="flex flex-wrap mb-4">
-          <div className="w-full">
-            <button className="primary-button">
-              <span>Submit</span>
-            </button>
-          </div>
-        </div>
-      </form>
+          <div className="mb-4">
+          <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 5 }}>
+            <textarea
+              className="w-full px-4 py-2 border rounded-lg"
+              id="message"
+              name="message"
+              rows="2"
+              placeholder='Message'
+            ></textarea>
+            </motion.div>
+          </div><br />
+          <div className="flex flex-wrap mb-4">
+             <div className="w-full">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2 }}>
+                <button className="primary-button mx-auto">
+                  <span>Submit</span>
+                </button>
+              </motion.div>
+             </div>
+           </div>
+        </form>
+
     </div>
-    </>
   );
-}
+};
 
 export default Contact;
-
-

@@ -131,6 +131,7 @@ const About1 = () => {
       <h3 className="text-4xl font-semibold drop-shadow-md text-center">
         Skills
       </h3>
+      <BottomLine />
       <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <div className="bg-white overflow-hidden shadow rounded-lg">
           <div className="px-4 py-5 sm:p-6">

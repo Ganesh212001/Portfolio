@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import food1 from '../images/food_1.png'
 import dreamdoor from '../images/dreamdoor.png'
 import portfolio from '../images/portfolio.png'
+import BottomLine from "../components/atoms/BottomLine/index";
 
 
 function Projects() {
@@ -11,7 +12,10 @@ function Projects() {
     <div className="bg-gray-100 min-h-screen">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="mt-10 text-4xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-4xl">Check Out My Projects</p>
+          <h1 className="text-4xl font-semibold drop-shadow-md text-center">
+            My<span className="text-primary"> Projects</span>
+          </h1>
+          <BottomLine />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">

@@ -42,7 +42,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram className="text-2xl text-pink-500" />
+            <FaInstagram className="text-2xl text-pink-700" />
           </Link>
         </div>
 
