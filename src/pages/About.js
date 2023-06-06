@@ -16,6 +16,7 @@ import node from '../logo/backend/node.png'
 import express from '../logo/backend/express.png'
 import python from '../logo/backend/python.png'
 import mongo from '../logo/database/mongodb.png'
+import img from '../images/portfolio_img.png'
 
 
 const About1 = () => {
@@ -46,7 +47,7 @@ const About1 = () => {
             }}
           >
             <img
-              src= "https://res.cloudinary.com/du541igfh/image/upload/v1683035791/Blog%20Portfolio%20Gilbert/Project/berthutapea.com/GilbertHutapea_qjy2gq.png"
+              src= {img}
               alt="Ganesh Mahajan"
               className="p-12 w-70 h-70 transform translate-y-[-12%]"
               title="Ganesh Mahajan"
