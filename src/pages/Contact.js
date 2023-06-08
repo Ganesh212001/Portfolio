@@ -65,6 +65,8 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
+              autoComplete="off"
+              autoCorrect="off"
               placeholder='First Name'
               onChange={(e) => onFormUpdate('firstName', e.target.value)}
             />
@@ -80,6 +82,8 @@ const Contact = () => {
               type="text"
               id="mobile"
               name="mobile"
+              autoComplete="off"
+              autoCorrect="off"
               placeholder='Last Name'
               onChange={(e) => onFormUpdate('lastName', e.target.value)}
             />
@@ -95,6 +99,8 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
+              autoComplete="off"
+              autoCorrect="off"
               placeholder='Email'
               onChange={(e) => onFormUpdate('email', e.target.value)}
             />
@@ -109,6 +115,8 @@ const Contact = () => {
               className="w-full px-4 py-2 border rounded-lg"
               id="phone"
               name="phone"
+              autoComplete="off"
+              autoCorrect="off"
               placeholder='Phone No.'
               onChange={(e) => onFormUpdate('phone', e.target.value)}
             ></input>
@@ -123,6 +131,8 @@ const Contact = () => {
               className="w-full px-4 py-2 border rounded-lg"
               id="message"
               name="message"
+              autoComplete="off"
+              autoCorrect="off"
               placeholder='Write Your Message Here...'
               onChange={(e) => onFormUpdate('message', e.target.value)}
             ></textarea>
