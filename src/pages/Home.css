@@ -1,5 +1,6 @@
 .back{
     background: url(../bg/gif_03.gif);
+    background-repeat: no-repeat;
     height: 100vh;
     font-family: 'Noto Serif', serif;
     font-family: 'Secular One', sans-serif;
