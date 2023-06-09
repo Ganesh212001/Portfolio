@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import food1 from '../images/food_1.png'
 import dreamdoor from '../images/dreamdoor.png'
-import portfolio from '../images/portfolio.png'
+import todo from '../images/todo.png'
 import BottomLine from "../components/atoms/BottomLine/index";
 
 
@@ -37,11 +37,11 @@ function Projects() {
             </Link>
           </div>
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <Link target='blank' to="https://portfolio-ganesh212001.vercel.app/">
-              <img className="w-full h-48 object-cover" src={portfolio} alt="Project 3" />
+            <Link target='blank' to="https://todo-app-git-master-ganesh212001.vercel.app/">
+              <img className="w-full h-48 object-cover" src={todo} alt="Project 3" />
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-800">Portfolio</h3>
-                <p className="mt-2 text-gray-600">This is my personal portfolio , this is react app please Check out this link to visit my portfolio and know about me </p>
+                <h3 className="text-lg font-semibold text-gray-800">Todo-App</h3>
+                <p className="mt-2 text-gray-600">This Is Todo App It Was pure React App A to-do app, also known as a task manager or task list, This Is Fully Responsive Website You can use Any Device</p>
               </div>
             </Link>
           </div>
