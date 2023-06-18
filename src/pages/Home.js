@@ -3,9 +3,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import Footer from '../components/Footer'
 import TypeJS from '../components/TypeJS'
-// import resume from '../images/Resume.pdf'
 import './Home.css'
-// import { Link } from 'react-router-dom'
 import About from '../pages/About'
 
 const Home = () => {
