@@ -5,7 +5,6 @@ import Contact from './Contact'
 import Footer from '../components/Footer'
 import TypeJS from '../components/TypeJS'
 import './Home.css'
-// import '../components/Footer.css'
 import About from '../pages/About'
 
 const Home = () => {

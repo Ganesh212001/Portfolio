@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-// import SkillPage from './components/SkillPage';
+// import Skill from './pages/Skill';
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         <Route path='/projects' element={<Projects/>}/>
       </Routes>
       {/* <Routes>
-        <Route path='/skill' element={<SkillPage/>}/>
+        <Route path='/skill' element={<Skill/>}/>
       </Routes> */}
      
     </div>

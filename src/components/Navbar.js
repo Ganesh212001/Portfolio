@@ -24,12 +24,13 @@ const Navbar = () => {
     { title: "Home", link: "/", icon: <FaHome /> },
     { title: "About", link: "/about", icon: <RiFolderInfoFill /> },
     { title: "Project", link: "/projects", icon: <MdWork /> },
+    // { title: "Skills", link: "/skill", icon: <FaLightbulb /> },
     { title: "Contact", link: "/contact", icon: <RiContactsBook2Fill /> }
   ];
   const activeLink = ({ isActive }) => {
     return {
       fontWeight: 500,
-      color: isActive && "#FF651C",
+      color: isActive && "#00E8F8",
     };
   };
 
@@ -57,13 +58,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`visible ${show && "nav-hidden"} shadow-lg bg-[#313131] 
+      className={`visible ${show && "nav-hidden"} shadow-lg bg-[#000b18] 
      z-50`}
     >
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
-            <h1 className="text-2xl text-primary font-lobster text-white">Ganesh Mahajan</h1>
+            <h1 className="text-2xl text-primary font-lobster text-white hover:text-[#00E8F8] drop-shadow-2xl shadow-[#00E8F8]">Ganesh Mahajan</h1>
           </Link>
         </div>
         <div>
@@ -144,7 +145,7 @@ const Navbar = () => {
               </ul>
               <div className="text-center">
                 <p className="text-neutral">
-                  &copy; Copyright 2023, Gilbert Hutapea. All Rights Reserved
+                  &copy; Copyright 2023, Ganesh Mahajan. All Rights Reserved
                 </p>
               </div>
             </Drawer>

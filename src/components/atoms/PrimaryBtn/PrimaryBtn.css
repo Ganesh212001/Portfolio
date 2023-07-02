@@ -8,9 +8,9 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    border: 2px solid #FF651C;
+    border: 2px solid #00E8F8;
     cursor: pointer;
-    background-color: #FF651C;
+    background-color: #000b18;
     color: white;
     transition: all 0.5s ease;
 }
@@ -32,16 +32,16 @@
 
 .primary-button::after {
     transition: all 0.5s ease;
-    background-color: #313131;
+    background-color: #00E8F8;
 }
 
 .primary-button::before {
     transition: all 0.5s ease-out;
-    background: #ec743c;
+    background: #000b18;
 }
 
 .primary-button:hover {
-    color: #FF651C;
+    color: #000b18;
     transform: translateY(-5px);
 }
 
