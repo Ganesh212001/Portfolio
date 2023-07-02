@@ -17,7 +17,7 @@ body {
     grid-area: footer;
     min-height: 12rem;
   }
-  body .footer .bubbles {
+  /* body .footer .bubbles {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,8 +25,8 @@ body {
     height: 1rem;
     background: var(--footer-background);
     filter: url("#blob");
-  }
-  body .footer .bubbles .bubble {
+  } */
+  /* body .footer .bubbles .bubble {
     position: absolute;
     left: var(--position, 50%);
     background: var(--footer-background);
@@ -34,12 +34,11 @@ body {
     -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
             animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
     transform: translate(-50%, 100%);
-  }
+  } */
   body .footer .content {
     z-index: 2;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 4rem;
     padding: 2rem;
     background: var(--footer-background);
   }
@@ -124,5 +123,13 @@ body {
     }
     100% {
       bottom: var(--distance, 10rem);
+    }
+  }
+  @media (max-width:600px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
