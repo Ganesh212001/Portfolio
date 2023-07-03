@@ -12,7 +12,7 @@ import Projects from './pages/Projects';
 function App() {
   return (
     <div className="App">
-      
+
       <Navbar />
 
       <Routes>
