@@ -6,7 +6,7 @@ import {
   RiFolderInfoFill,
 } from "react-icons/ri";
 import { GiCrossMark } from "react-icons/gi";
-import { FaHome, FaDownload } from "react-icons/fa";
+import { FaHome, FaDownload, FaLightbulb } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
@@ -24,7 +24,7 @@ const Navbar = () => {
     { title: "Home", link: "/", icon: <FaHome /> },
     { title: "About", link: "/about", icon: <RiFolderInfoFill /> },
     { title: "Project", link: "/projects", icon: <MdWork /> },
-    // { title: "Skills", link: "/skill", icon: <FaLightbulb /> },
+    { title: "Skills", link: "/skill", icon: <FaLightbulb /> },
     { title: "Contact", link: "/contact", icon: <RiContactsBook2Fill /> }
   ];
   const activeLink = ({ isActive }) => {

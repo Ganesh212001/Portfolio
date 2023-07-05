@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import TypeJS from '../components/TypeJS'
 import './Home.css'
 import About from '../pages/About'
+import Skill from './Skill'
 
 const Home = () => {
   return (
@@ -60,6 +61,7 @@ const Home = () => {
       </div>
       <About/>
       <Projects/>
+      <Skill />
       <Contact/>
       <Footer />
     </>

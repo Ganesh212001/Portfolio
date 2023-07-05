@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-// import Skill from './pages/Skill';
+import Skill from './pages/Skill';
 
 
 function App() {
@@ -27,9 +27,9 @@ function App() {
       <Routes>
         <Route path='/projects' element={<Projects/>}/>
       </Routes>
-      {/* <Routes>
+      <Routes>
         <Route path='/skill' element={<Skill/>}/>
-      </Routes> */}
+      </Routes>
      
     </div>
   );

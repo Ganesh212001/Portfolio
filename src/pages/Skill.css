@@ -1,0 +1,56 @@
+.icon-section {
+    color: #00E8F8;
+    background-color: #1F252E;
+}
+.icon-section:hover{
+    color: #1F252E;
+    background-color: #00E8F8;
+    box-shadow: 0 0 20px #00E8F8;
+    transition: all .3s ease-in-out;
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in;
+}
+.icon-section svg:hover path {
+    fill: #1F252E;
+}
+@media (max-width:600px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    .section-div {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       margin-left: 0px;
+       margin-right: 0px;
+    }
+    /* .section-one {
+        justify-content: center;
+    } */
+    .section-two {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    /* .section-three {
+        justify-content: center;
+    } */
+    .section-four {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    /* .section-five {
+        justify-content: center;
+    } */
+    .section-six {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    /* .section-seven {
+        justify-content: center;
+    } */
+    .section-eight {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
