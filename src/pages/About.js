@@ -8,11 +8,11 @@ import BottomLine from "../components/atoms/BottomLine/index";
 import { FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import resume from "../images/Resume.pdf";
-import img from "../assets/profile.png";
+import img from "../assets/profile .png";
 
 const About1 = () => {
   return (
-    <div className="parent pt-16 my-16">
+    <div className="parent pt-16 bg-[#000b18]">
       <div className="">
         <motion.div
           className="mb-10"
@@ -23,7 +23,7 @@ const About1 = () => {
             transition: { duration: 1, type: "spring" },
           }}
         >
-          <h1 className="text-4xl font-semibold drop-shadow-md text-center">
+          <h1 className="text-4xl font-semibold drop-shadow-md text-center text-[#00E8F8]">
             About <span className="text-primary">Me</span>
           </h1>
           <BottomLine />
@@ -40,7 +40,7 @@ const About1 = () => {
             <img
               src={img}
               alt="Ganesh Mahajan"
-              className="p-12 w-96 h-full transform translate-y-[-12%]"
+              className="p-12 w-96 h-full transform translate-y-[-12%] mx-auto -mt-14"
               title="Ganesh Mahajan"
             />
           </motion.div>
@@ -53,12 +53,12 @@ const About1 = () => {
               transition: { duration: 1, delay: 1.25 },
             }}
           >
-            <h1 className="text-4xl font-semibold mb-4 text-center translate-y-[-380%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left">
+            <h1 className="text-4xl font-semibold mb-4 text-center translate-y-[-380%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left text-[#00E8F8]">
               Ganesh Mahajan
             </h1>
             <div className="my-8 css">
               <TypeAnimation
-                className="css text-2xl text-primary font-bold text-center translate-y-[-500%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-4 md:text-left"
+                className="css text-2xl text-primary font-bold text-center translate-y-[-500%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-4 md:text-left text-[#00E8F8]"
                 cursor={true}
                 sequence={[
                   "A Mern-stack Developer",
@@ -72,7 +72,7 @@ const About1 = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className="text-neutral font-medium text-center translate-y-[-70%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
+            <p className="text-neutral font-medium text-center translate-y-[-70%] sm:translate-y-[-0%] sm:mb-2 md:text-left text-[#00E8F8]">
               As a MERN stack developer, I am committed to building high-quality
               web applications that meet the needs of my clients. With years of
               experience in full-stack web development, I specialize in using
@@ -80,30 +80,30 @@ const About1 = () => {
               create scalable and robust web applications.
             </p>
             <br />
-            <p className="text-neutral font-medium text-center translate-y-[-125%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
+            <p className="text-neutral font-medium text-center translate-y-[-125%] sm:translate-y-[-0%] sm:mb-2 md:text-left text-[#00E8F8]">
               My passion for solving complex problems and creating innovative
               solutions drives me to stay up-to-date with the latest
               technologies and trends in the industry.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4 mt-4 text-center translate-y-[-50%] sm:translate-y-[-0%] sm:mb-2 md:text-left ">
-              <h2 className="font-medium">
+              <h2 className="font-medium text-[#00E8F8]">
                 <span className="mr-2 text-primary">Name : </span>Ganesh Mahajan
               </h2>
-              <h2 className="font-medium">
+              <h2 className="font-medium text-[#00E8F8]">
                 <span className="mr-2 text-primary">Phone : </span>+91
                 9724158961
               </h2>
-              <h2 className="font-medium">
+              <h2 className="font-medium text-[#00E8F8]">
                 <span className="mr-2 text-primary">Email : </span>
                 ganeshmahajan21062001@gmail.com
               </h2>
-              <h2 className="font-medium">
+              <h2 className="font-medium text-[#00E8F8]">
                 <span className="mr-2 text-primary">Address : </span>
                 Surat,Gujarat,India
               </h2>
               <Link to={resume} target="blank">
                 <div className="flex justify-center mt-8 md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
-                  <button className="primary-button">
+                  <button className="primary-button text-[#00E8F8] ">
                     <span>My Resume</span>
                     <span>
                       <FaDownload />

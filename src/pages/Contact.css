@@ -1,3 +1,6 @@
 form {
   width: 100rem;
 }
+::placeholder {
+  color: #00E8F8;
+}

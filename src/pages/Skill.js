@@ -7,12 +7,13 @@ import './Skill.css'
 const Skill = () => {
   return (
     <>
-        <div className='mt-20'>
+        <div className=' bg-[#000b18] py-16'>
+          <div className='pb-16'>
             <h1 className="text-4xl font-semibold drop-shadow-md text-center">
-                <span className="text-primary">Skills</span>
+                <span className="text-primary text-[#00E8F8]">Skills</span>
             </h1>
             <BottomLine />
-            
+            </div>
             <div className='flex flex-row mt-16 justify-center space-x-20 section-div'>
               <div className="flex space-x-20 section-one">
                 <div className='flex w-40 h-40 rounded-2xl icon-section'>
@@ -28,7 +29,7 @@ const Skill = () => {
                   </div>
                 </div>
                 </div>
-                <div className="flex space-x-20 section-two">
+                <div className="flex space-x-20 section-two sm:mx-auto">
                 <div className='flex w-40 h-40 rounded-2xl icon-section'>
                   <div className="flex flex-col my-auto mx-auto">
                     <FaJsSquare className='w-24 h-24 icon'/>

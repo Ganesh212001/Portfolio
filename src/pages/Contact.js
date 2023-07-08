@@ -44,8 +44,8 @@ const Contact = () => {
     };
 
   return (
-    <div className="flex justify-center flex-col items-center h-screen -mt-10">
-       <h1 className="text-4xl font-semibold drop-shadow-md text-center">
+    <div className="flex justify-center flex-col items-center h-screen -mt-10 bg-[#000b18]">
+       <h1 className="text-4xl font-semibold drop-shadow-md text-center text-[#00E8F8]">
            
         <motion.div
         initial={{ opacity: 0, y: -100 }}
@@ -61,7 +61,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <input value={formDetails.firstName}
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
               type="text"
               id="name"
               name="name"
@@ -78,7 +78,7 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 5 }}>
           <input value={formDetails.lasttName}
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
               type="text"
               id="mobile"
               name="mobile"
@@ -95,7 +95,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <input value={formDetails.email}
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
               type="email"
               id="email"
               name="email"
@@ -112,7 +112,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <input value={formDetails.phone}
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
               id="phone"
               name="phone"
               autoComplete="off"
@@ -128,7 +128,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <textarea value={formDetails.message}
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
               id="message"
               name="message"
               autoComplete="off"
