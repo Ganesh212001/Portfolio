@@ -10,8 +10,8 @@ import Skill from './Skill'
 const Home = () => {
   return (
     <>
-      <div className='text-white h-screen gap-8 flex flex-col justify-center back'>
-        <div className="flex flex-col justify-normal items-start ml-11 back2">
+      <div className='text-[#00E8F8] h-screen gap-8 flex flex-col justify-center items-end back'>
+        <div className="flex flex-col items-center mr-32 back2">
           <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
           <p className="text-lg mb-2">This is my personal portfolio website built with React.</p>
           <p className="text-lg mb-4">Feel free to explore my projects and learn more about me.</p> <br />

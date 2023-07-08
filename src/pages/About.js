@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import resume from "../images/Resume.pdf";
 import img from "../assets/profile .png";
 
-const About1 = () => {
+const About = () => {
   return (
     <div className="parent pt-16 bg-[#000b18]">
       <div className="">
@@ -119,4 +119,4 @@ const About1 = () => {
   );
 };
 
-export default About1;
+export default About;

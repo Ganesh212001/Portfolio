@@ -1,10 +1,13 @@
 .back{
-    background: url(../bg/gif_03.gif);
-    /* background-repeat: no-repeat; */
+    /* background: url(../bg/gif_03.gif); */
+    background: url(../bg/gif_.jpg);
+    background-repeat: no-repeat;
     height: 100vh;
+    background-size: cover;
     font-family: 'Noto Serif', serif;
     font-family: 'Secular One', sans-serif;
 }
+
 @media (max-width:500px) {
 .back {
     padding-top: 60px;
