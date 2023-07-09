@@ -1,5 +1,4 @@
 .back{
-    /* background: url(../bg/gif_03.gif); */
     background: url(../bg/gif_.jpg);
     background-repeat: no-repeat;
     height: 100vh;
@@ -22,6 +21,6 @@
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    margin-right: 2.5rem;
+    margin-right: 0px;
     }
 }

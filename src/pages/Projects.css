@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .container {
     position: relative;
     display: flex;
@@ -108,12 +94,12 @@ body {
 
 @media (max-width: 480px) {
     .container .card {
-        width: 230px;
+        width: 300px;
         border-radius: 15px;
     }
 
     .container .card .img-box {
-        width: 185px;
+        width: 240px;
         border-radius: 10px;
     }
 
