@@ -50,7 +50,7 @@ const Contact = () => {
         <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2 }}>Contact <span className="text-primary">Us</span>
+        transition={{ duration: 2 }}>Contact <span className="text-primary">Me</span>
           </motion.div>
           </h1>
           <BottomLine />
