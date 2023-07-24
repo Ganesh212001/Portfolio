@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           <div className="w-full h-[2px] bg-[#00E8F8]"></div>
           <div className="flex flex-col md:flex-row items-center justify-between mt-8">
-            <p>&copy; Copyright All Rights Reserved {year.getFullYear()}</p>
+            <p>Ganesh Mahajan &copy; Copyright All Rights Reserved {year.getFullYear()}</p>
             <p>
               Developed by{" "}
               <Link

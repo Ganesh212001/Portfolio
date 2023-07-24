@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
-            <h1 className="text-2xl text-primary font-lobster text-white hover:text-[#00E8F8] drop-shadow-2xl shadow-[#00E8F8]">Ganesh Mahajan</h1>
+            <h1 className="text-2xl text-primary font-'Nunito', sans-serif; text-[#00E8F8] hover:text-white drop-shadow-2xl shadow-[#00E8F8]">Ganesh.</h1>
           </Link>
         </div>
         <div>

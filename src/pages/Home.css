@@ -1,22 +1,30 @@
 .back{
-    background: url(../bg/gif_.jpg);
-    background-repeat: no-repeat;
+    background-color: #000b18;
     height: 100vh;
-    background-size: cover;
-    font-family: 'Noto Serif', serif;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
+.span {
+    font-size: 4rem;
+}
+.spanone {
+    font-size: 6rem;
+    margin-top: -30px;
+}
+.spantwo {
+    font-size: 3rem;
+}
+.spanthree {
+    font-size: 1.5rem;
+}
+.gif {
+    height: 5rem;
+}
 .back {
-    color: white;
     padding-top: 60px;
-    background: url('../bg/gif_02.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    font-size:smaller;
+    height: 550px;
+    width: 100%;
     }
 .back2 {
     justify-content: center;

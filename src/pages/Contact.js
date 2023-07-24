@@ -61,7 +61,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <input value={formDetails.firstName}
-              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
               type="text"
               id="name"
               name="name"
@@ -78,7 +78,7 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 5 }}>
           <input value={formDetails.lasttName}
-              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
               type="text"
               id="mobile"
               name="mobile"
@@ -95,7 +95,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <input value={formDetails.email}
-              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
               type="email"
               id="email"
               name="email"
@@ -112,7 +112,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <input value={formDetails.phone}
-              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
               id="phone"
               name="phone"
               autoComplete="off"
@@ -128,7 +128,7 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}>
             <textarea value={formDetails.message}
-              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18]"
+              className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
               id="message"
               name="message"
               autoComplete="off"
