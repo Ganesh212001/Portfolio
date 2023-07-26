@@ -38,7 +38,7 @@ const Contact = () => {
       setFormDetails(formInitialDetails);
       if (result.code === 200) {
         // setStatus({ succes: true, message: 'Message sent successfully'});
-        toast.success('Message Send SuccessFully', {
+        toast.success('Message Sent SuccessFully', {
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -50,7 +50,7 @@ const Contact = () => {
           });
       } else {
         // setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        toast.error('Sending Error, Please Try again', {
+        toast.error('Sending Error, Please Try Again', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
