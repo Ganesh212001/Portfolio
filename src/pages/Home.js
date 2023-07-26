@@ -7,6 +7,7 @@ import About from '../pages/About'
 import Skill from './Skill'
 import Gif from '../images/drinkingWater.gif'
 
+
 const Home = () => {
   return (
     <>

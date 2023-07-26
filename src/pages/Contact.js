@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
-import { Col } from "react-bootstrap"
 import BottomLine from "../components/atoms/BottomLine/index";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -14,7 +15,6 @@ const Contact = () => {
     }
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('Send');
-    const [status, setStatus] = useState({});
   
     const onFormUpdate = (category, value) => {
         setFormDetails({
@@ -37,16 +37,37 @@ const Contact = () => {
       let result = await response.json();
       setFormDetails(formInitialDetails);
       if (result.code === 200) {
-        setStatus({ succes: true, message: 'Message sent successfully'});
+        // setStatus({ succes: true, message: 'Message sent successfully'});
+        toast.success('Message Send SuccessFully', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       } else {
-        setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+        // setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+        toast.error('Sending Error, Please Try again', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          }); 
       }
     };
 
   return (
+    <>
+    <ToastContainer />
     <div className="flex justify-center flex-col items-center h-screen -mt-10 bg-[#000b18]">
-       <h1 className="text-4xl font-semibold drop-shadow-md text-center text-[#00E8F8]">
-           
+       <h1 className="text-4xl font-semibold drop-shadow-md text-center text-[#00E8F8]">      
         <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -149,15 +170,16 @@ const Contact = () => {
                 </button>
               </motion.div>
             </div>
-                    {
+                    {/* {
                       status.message &&
                       <Col className="mx-auto mt-4">
                         <p className={status.success === false ? "danger text-red-600" : "success text-green-600"}>{status.message}</p>
                       </Col>
-                    }
+                    } */}
            </div>
         </form>
     </div>
+    </>
   );
 };
 
