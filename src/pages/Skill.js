@@ -2,6 +2,7 @@ import React from 'react'
 import BottomLine from '../components/atoms/BottomLine'
 import { FaHtml5 , FaCss3Alt , FaJsSquare , FaReact, FaFontAwesome, FaBootstrap, FaGitAlt,
          FaGithub, FaPython, FaNodeJs } from "react-icons/fa";
+import {SiPostman} from 'react-icons/si'
 import './Skill.css'
 
 const Skill = () => {
@@ -133,8 +134,8 @@ const Skill = () => {
                 </div>
                 <div className='flex w-40 h-40 rounded-2xl icon-section'>
                   <div className="flex flex-col my-auto mx-auto">
-                  < FaHtml5 className='w-24 h-24 icon' />
-                    <span className='text-lg text-icon mx-auto'>Blank</span>
+                  < SiPostman className='w-20 h-20 icon' />
+                    <span className='text-lg text-icon mx-auto'>Postman</span>
                   </div>
                 </div>
               </div>
