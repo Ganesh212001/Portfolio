@@ -57,10 +57,7 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <div
-      className={`visible ${show && "nav-hidden"} shadow-lg bg-[#000b18] 
-     z-50`}
-    >
+    <div className={`visible ${show && "nav-hidden"} shadow-lg bg-[#000b18] z-50`}>
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
@@ -144,7 +141,7 @@ const Navbar = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <p className="text-neutral">
+                <p className="text-neutral text-white hover:text-[#00E8F8]">
                   &copy; Copyright 2023, Ganesh Mahajan. All Rights Reserved
                 </p>
               </div>

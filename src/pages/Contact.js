@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-
+  
     const formInitialDetails = {
       firstName: '',
       lastName: '',
@@ -36,8 +36,20 @@ const Contact = () => {
       setButtonText("Send");
       let result = await response.json();
       setFormDetails(formInitialDetails);
-      if (result.code === 200) {
-        // setStatus({ succes: true, message: 'Message sent successfully'});
+
+      if (formInitialDetails === null || " ") {
+       return toast.warn('Please Enter Details!', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
+      }
+      else if (result.code === 200) {
         toast.success('Message Sent SuccessFully', {
           position: "top-right",
           autoClose: 3000,
@@ -49,7 +61,6 @@ const Contact = () => {
           theme: "dark",
           });
       } else {
-        // setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
         toast.error('Sending Error, Please Try Again', {
           position: "top-right",
           autoClose: 5000,
@@ -166,16 +177,10 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}>
                 <button className="primary-button mx-auto">
-                  <span>{buttonText}</span>
+                  <span>{buttonText}</span>  
                 </button>
               </motion.div>
             </div>
-                    {/* {
-                      status.message &&
-                      <Col className="mx-auto mt-4">
-                        <p className={status.success === false ? "danger text-red-600" : "success text-green-600"}>{status.message}</p>
-                      </Col>
-                    } */}
            </div>
         </form>
     </div>
@@ -183,4 +188,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact

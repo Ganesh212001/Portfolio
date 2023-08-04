@@ -1,7 +1,6 @@
 import React from 'react'
 import Projects from './Projects'
 import Contact from './Contact'
-import Footer from '../components/Footer'
 import './Home.css'
 import About from '../pages/About'
 import Skill from './Skill'
@@ -34,7 +33,6 @@ const Home = () => {
       <Projects/>
       <Skill />
       <Contact/>
-      <Footer />
     </>
   )
 }
