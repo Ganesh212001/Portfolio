@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import {
-  RiMenu3Fill,
-  RiContactsBook2Fill,
-  RiFolderInfoFill,
-} from "react-icons/ri";
+import { RiMenu3Fill,RiContactsBook2Fill,RiFolderInfoFill} from "react-icons/ri";
 import { GiCrossMark } from "react-icons/gi";
 import { FaHome, FaDownload, FaLightbulb } from "react-icons/fa";
 import { MdWork } from "react-icons/md";

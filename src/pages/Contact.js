@@ -36,20 +36,8 @@ const Contact = () => {
       setButtonText("Send");
       let result = await response.json();
       setFormDetails(formInitialDetails);
-
-      if (formInitialDetails === null || " ") {
-       return toast.warn('Please Enter Details!', {
-          position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-          });
-      }
-      else if (result.code === 200) {
+      
+       if (result.code === 200) {
         toast.success('Message Sent SuccessFully', {
           position: "top-right",
           autoClose: 3000,
