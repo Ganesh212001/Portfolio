@@ -26,7 +26,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       setButtonText("Sending...");
-      let response = await fetch("https://portfolio-gri1.vercel.app/contact", {
+      let response = await fetch("portfolio-gri1-git-main-ganesh212001.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -82,6 +82,7 @@ const Contact = () => {
         transition={{ duration: 5 }}>
             <input value={formDetails.firstName}
               className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
+              required='true'
               type="text"
               id="name"
               name="name"
@@ -97,8 +98,9 @@ const Contact = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 5 }}>
-          <input value={formDetails.lasttName}
+          <input value={formDetails.lastName}
               className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
+              required='true'
               type="text"
               id="mobile"
               name="mobile"
@@ -116,6 +118,7 @@ const Contact = () => {
         transition={{ duration: 5 }}>
             <input value={formDetails.email}
               className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
+              required='true'
               type="email"
               id="email"
               name="email"
@@ -133,6 +136,7 @@ const Contact = () => {
         transition={{ duration: 5 }}>
             <input value={formDetails.phone}
               className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
+              required='true'
               id="phone"
               name="phone"
               autoComplete="off"
@@ -149,6 +153,7 @@ const Contact = () => {
         transition={{ duration: 5 }}>
             <textarea value={formDetails.message}
               className="w-full px-4 py-2 border border-[#00E8F8] rounded-lg bg-[#000b18] text-[#00E8F8]"
+              required='true'
               id="message"
               name="message"
               autoComplete="off"
