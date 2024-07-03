@@ -111,7 +111,7 @@ function Projects() {
                   </Link>
                   <Link
                     target="blank"
-                    to="https://todo-app-git-master-ganesh212001.vercel.app/"
+                    to="https://ganesh-todo.vercel.app/"
                   >
                     <button className="primary-button mx-auto">
                       <span>{btext}</span>
